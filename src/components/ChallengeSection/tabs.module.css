@@ -1,0 +1,20 @@
+/* flex items-center gap-3 p-3 rounded bg-gradient-to-r from-[#2DC4EA] to-[#3AE7AB] text-white */
+
+.normal_state, .active_state {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.normal_state {
+    background-color: #FFFFFF;
+    color: #000000;
+}
+
+.active_state {
+    background: transparent linear-gradient(90deg, #2DC4EA 0%, #3AE7AB 100%) 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+}
