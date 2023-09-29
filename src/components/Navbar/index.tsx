@@ -4,7 +4,6 @@ import { BiSearch } from "react-icons/bi";
 import { BsFillTelephoneFill, BsWhatsapp } from "react-icons/bs";
 import { MdMail } from "react-icons/md";
 import { IoDocumentTextOutline } from "react-icons/io5";
-import AnimationFrame from "../AnimationFrame";
 
 const Navbar = () => {
   return (
@@ -16,7 +15,7 @@ const Navbar = () => {
         height={250}
         className="absolute left-36 "
       />
-      <AnimationFrame className="flex items-center justify-end gap-8 py-1 bg-[#00000029] px-36">
+      <div className="flex items-center justify-end gap-8 py-1 bg-[#00000029] px-36">
         <h6 className="text-sm">
           <a href="tel:62480838" className="flex items-center gap-2">
             <BsFillTelephoneFill className="text-[#25A9E0]" /> 62480838
@@ -42,15 +41,15 @@ const Navbar = () => {
           <IoDocumentTextOutline className="text-lg" /> Quote
         </a>
         <Dropdown title="SG EN" data={languageDd} language />
-      </AnimationFrame>
-      <AnimationFrame className="flex items-center justify-end gap-8 py-2 bg-white shadow-lg px-36">
+      </div>
+      <div className="flex items-center justify-end gap-8 py-2 bg-white shadow-lg px-36">
         <a href="/">Home</a>
         <Dropdown title="Services" data={mockDd} />
         <Dropdown title="Company" data={mockDd} />
         <a href="/">Blog</a>
         <Dropdown title="Contact Us" data={mockDd} />
         <BiSearch fontSize="24px" />
-      </AnimationFrame>
+      </div>
     </div>
   );
 };
